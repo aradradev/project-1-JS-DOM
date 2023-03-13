@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    background: url('img/library.jpg') no-repeat center center/ cover;
+}
+.main{
+    width: 500px;
+    height: auto;
+    background: #fff;
+    background: linear-gradient(to bottom, #915e5e,#d3c22b , #7ec76f);
+    opacity: .8;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px 10px #000;
+    gap: 2rem;
+}
+.header{
+    margin-top: 2rem;
+}
+.header .title{
+    color: aliceblue;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.container-items {
+    color: antiquewhite;
+    padding: 0 10%;
+    text-align: center;    
+}
+.container-quotes{
+    line-height: 2;
+    margin-bottom: 1.5rem;
+}
+.container-quotes .quote{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.container-author{
+    margin-bottom: 1.3rem;
+}
+.container-author{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container-btn #btn,
+.container-btn #btn-solution{
+    margin-bottom: 2rem;
+    margin-right: .2rem;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    background: #1dd616;
+    color: aliceblue;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.container-btn #btn:hover{
+    box-shadow: 2px 2px 2px 2px #070e03;
+    color: #fad3d3;
+    font-weight: 500;
+    transition: 1s;
+
+}
+#result{
+    display: none;
+}
+#result.is-visible{
+    display: block;
+}
+.footer a{
+    text-decoration: none;
+    font-weight: 700;
+}
